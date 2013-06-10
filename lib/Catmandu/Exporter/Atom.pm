@@ -223,7 +223,7 @@ sub commit {
 
 =head1 NAME
 
-Catmandu::Exporter::Atom - a Atom exporter
+Catmandu::Exporter::Atom - an Atom exporter
 
 =head1 SYNOPSIS
 
@@ -310,6 +310,42 @@ Catmandu::Exporter::Atom - a Atom exporter
     });
 
     printf "exported %d objects\n" , $exporter->count;
+
+=head2 Add one object
+
+    use Catmandu::Exporter::Atom;
+    my $exporter = Catmandu::Exporter::Atom->new();
+
+    print $exporter->add($hashref);
+
+=head2 Add many objects to exporter
+
+    use Catmandu::Exporter::Atom;
+    my $exporter = Catmandu::Exporter::Atom->new();
+
+    print $exporter->add_many($arrayref);
+
+=head2 Add many objects from an iterator
+
+    use Catmandu::Exporter::Atom;
+    my $exporter = Catmandu::Exporter::Atom->new();
+
+    my $iterator = Catmandu::Importer::
+
+    print 
+
+=head2 Fix your data while exporting the data
+
+    use Catmandu::Exporter::Atom;
+    my $exporter = Catmandu::Exporter::Atom->new(fix => 'fix.txt');
+
+    # where fix.txt looks for example:
+    # add_field()
+    # delete
+    # mv
+
+    print $exporter->add($data);
+
 
 =head1 SEE ALSO
 
