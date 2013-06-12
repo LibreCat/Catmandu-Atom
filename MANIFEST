@@ -1,9 +1,9 @@
 Build.PL
 Changes
 lib/Catmandu/Atom.pm
+lib/Catmandu/Exporter/Atom.pm
+lib/Catmandu/Importer/Atom.pm
 MANIFEST			This list of files
 README
-t/00-load.t
-t/manifest.t
-t/pod-coverage.t
-t/pod.t
+t/Catmandu-Exporter-Atom.t
+t/Catmandu-Importer-Atom.t

@@ -7,8 +7,6 @@ my $builder = Module::Build->new(
     license             => 'perl',
     dist_author         => [
         'Nicolas Steenlant <nicolas.steenlant@ugent.be>',
-        'Patrick Hochstenbach <patrick.hochstenbach@ugent.be>',
-        'Vitali Peil <vitali.peil@uni-bielefeld.de>',
         ],
     dist_version_from   => 'lib/Catmandu/Atom.pm',
     release_status      => 'stable',
