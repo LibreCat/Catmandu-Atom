@@ -12,6 +12,7 @@ my $builder = Module::Build->new(
     requires => {
         'perl' => '5.10.1',
         'Catmandu' => '0.2003',
+        'namespace::clean' => '0.24',
         'XML::Atom' => '0.41',
     },
     add_to_cleanup     => [ 'Catmandu-Atom-*' ],
