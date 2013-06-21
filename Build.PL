@@ -5,16 +5,9 @@ use Module::Build;
 my $builder = Module::Build->new(
     module_name         => 'Catmandu::Atom',
     license             => 'perl',
-    dist_author         => [
-        'Nicolas Steenlant <nicolas.steenlant@ugent.be>',
-        ],
-    dist_version_from   => 'lib/Catmandu/Atom.pm',
-    release_status      => 'stable',
-    configure_requires => {
-        'Module::Build' => 0,
-    },
     build_requires => {
-        'Test::Exception' => '0.31',
+        'Test::Exception' => 0,
+        'Test::More' => 0,
     },
     requires => {
         'perl' => '5.10.1',
@@ -23,7 +16,6 @@ my $builder = Module::Build->new(
     },
     add_to_cleanup     => [ 'Catmandu-Atom-*' ],
     create_makefile_pl => 'traditional',
-    create_license => 1,
 );
 
-$builder->create_build_script();
+$builder->create_build_script;
