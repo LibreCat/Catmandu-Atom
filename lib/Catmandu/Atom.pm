@@ -42,6 +42,7 @@ Nicolas Steenlant, C<< <nicolas.steenlant at ugent.be> >>
 =head1 CONTRIBUTOR
 
 Vitali Peil, C<< <vitali.peil at uni-bielefeld.de> >>
+Nicolas Franck, C<< <nicolas.franck at ugent.be> >>
 
 =head1 MAINTAINER
 
