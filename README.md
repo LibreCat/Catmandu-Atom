@@ -19,10 +19,6 @@ Catmandu::Atom - modules for working with Atom feeds
                 printf "%s\n" , $entry->{title};
         });
 
-# VERSION
-
-Version 0.02
-
 # MODULES
 
 - [Catmandu::Exporter::Atom](https://metacpan.org/pod/Catmandu::Exporter::Atom)
@@ -35,6 +31,7 @@ Nicolas Steenlant, `<nicolas.steenlant at ugent.be>`
 # CONTRIBUTOR
 
 Vitali Peil, `<vitali.peil at uni-bielefeld.de>`
+Nicolas Franck, `<nicolas.franck at ugent.be>`
 
 # MAINTAINER
 
