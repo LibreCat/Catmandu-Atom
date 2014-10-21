@@ -10,7 +10,7 @@ with 'Catmandu::Importer';
 
 my $ENTRY_ATTRS    = [qw(id title published updated summary rights)];
 my $CONTENT_ATTRS  = [qw(mode type body)];
-my $PERSON_ATTRS   = [qw(name email uri url homepage)];
+my $PERSON_ATTRS   = [qw(name email uri homepage)];
 my $LINK_ATTRS     = [qw(rel href hreflang title type length)];
 my $CATEGORY_ATTRS = [qw(term label scheme)];
 
@@ -96,6 +96,44 @@ Catmandu::Importer::Atom - Package that imports Atom feeds
         my $hashref = $_[0];
         # ...
     });
+
+=head1 DATA MODEL
+
+Each parsed Atom entry is transformed into a hash ref:
+
+    {
+        id         => '...' ,
+        title      => '...' ,
+        published  => '...' , 
+        updated    => '...' ,
+        summary    => '...' ,
+        rights     => '...' ,
+        content    => {
+            mode => '...' ,
+            type => '...' ,
+            body => '...' ,
+        } ,
+        author     => {
+            name  => '...' ,
+            email => '...' ,
+            uri   => '...' ,
+            homepage => '...' ,
+        } ,
+        contributor => {
+            name  => '...' ,
+            email => '...' ,
+            uri   => '...' ,
+            homepage => '...' ,
+        } ,
+        category => [
+            { term => '...' , label => '...' , scheme => '....' } ,
+        ],
+        link => [
+            { rel => '...' , href => '...' , hreflang => '...' ,
+              title => '...' , type => '...' , length => '...'} ,
+        ],
+        <<all other elements are added as name-value pairs>>
+    }
 
 =head1 METHODS
 
