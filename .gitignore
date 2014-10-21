@@ -1,13 +1,3 @@
-!.gitignore
-.DS_Store
-*.swp
-.build
-_build
-blib
-Build
-Makefile.PL
-MANIFEST*
-META.*
-MYMETA.*
-Catmandu-Atom-*
-!*.t
+/Catmandu-Atom-*
+/.build
+!META.json
