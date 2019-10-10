@@ -1,6 +1,8 @@
 Revision history for Catmandu-Atom
 
 {{$NEXT}}
+
+0.05  2019-10-10 16:40:43 CEST
     - Fixing dependencies
     
 0.04  2014-12-22 15:37:40 CET
