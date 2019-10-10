@@ -12,3 +12,5 @@ MYMETA.*
 Catmandu-*
 !*.t
 .perl-version
+cpanfile.snapshot
+local
