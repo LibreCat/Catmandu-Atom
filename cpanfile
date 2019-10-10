@@ -9,4 +9,5 @@ on 'test', sub {
 
 requires 'Catmandu', '0.9206';
 requires 'XML::Atom', '0.41';
-
+requires 'Moo', 0;
+requires 'namespace::clean', 0;
